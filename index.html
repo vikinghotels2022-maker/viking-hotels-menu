@@ -134,7 +134,7 @@
                     </p>
 
                     <p class="copyright">
-                        
+                        &copy; <span id="yil"></span> Tüm hakları saklıdır.
                     </p>
 
                 </div>
@@ -148,5 +148,11 @@
     </div>
     <script src="Script/js/title.js"></script>
     <script src="Script/js/lang.js"></script>
+    <p>&copy; <span id="yil"></span> Tüm hakları saklıdır.</p>
+
+<script>
+    document.getElementById("yil").textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
