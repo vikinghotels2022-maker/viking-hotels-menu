@@ -43,7 +43,14 @@ body {
     align-items: center;
     padding: 30px 15px;
 }
-
+.designer{
+    display:block;
+    text-align:center;
+    font-size:12px;
+    opacity:0.5;
+    margin-top:10px;
+    letter-spacing:1px;
+}
 .menu-box {
     width: 100%;
     max-width: 850px;
