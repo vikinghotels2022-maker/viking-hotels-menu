@@ -135,10 +135,10 @@
                         <span class="designer">Design by Habip DOĞAN</span>
                 </br>
                     <p class="copyright">
-                        &copy; <span id="yil" data-lang="tr"></span> Tüm hakları saklıdır.
-                        &copy; <span id="yil" data-lang="en"></span> Tüm hakları saklıdır.
-                        &copy; <span id="yil" data-lang="tr"></span> Tüm hakları saklıdır.
-                    </p>
+    <span data-lang="tr">© <span class="year"></span> Tüm hakları saklıdır.</span>
+    <span data-lang="en">© <span class="year"></span> All rights reserved.</span>
+    <span data-lang="ru">© <span class="year"></span> Все права защищены.</span>
+</p>
 
                 </div>
 
@@ -153,7 +153,9 @@
     <script src="Script/js/lang.js"></script>
 
 <script>
-    document.getElementById("yil").textContent = new Date().getFullYear();
+   document.querySelectorAll('.year').forEach(el => {
+    el.textContent = new Date().getFullYear();
+});
 </script>
 
 </body>
