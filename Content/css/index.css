@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-body {
+/*body {
     font-family: 'Poppins',sans-serif;
     min-height: 100vh;
     overflow-x: hidden;
@@ -13,7 +13,16 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-}
+}*/
+body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background:
+        linear-gradient(rgba(8, 10, 14, 0.58), rgba(8, 10, 14, 0.7)),
+        url("https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1800&q=85") center / cover fixed;
+    }
 
     /* Sinematik arka plan efekti */
     body::before {
