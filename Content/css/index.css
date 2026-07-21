@@ -16,14 +16,14 @@ body {
 }
 
     /* Sinematik arka plan efekti */
-   /* body::before {
+    body::before {
         content: "";
         position: fixed;
         inset: 0;
         background: radial-gradient(circle at top left, rgba(255,140,0,0.18), transparent 30%), radial-gradient(circle at bottom right, rgba(255,215,0,0.12), transparent 30%);
         animation: bgMove 8s ease-in-out infinite alternate;
         z-index: -1;
-    }*/
+    }
 
 @keyframes bgMove {
     from {
