@@ -108,10 +108,30 @@ body {
     grid-template-columns: repeat(2,1fr);
     gap: 25px;
 }
-
+/*
 .menu-link {
     text-decoration: none;
     color: white;
+}
+*/
+.menu-link {
+    display: block;
+    text-decoration: none;
+    color: white;
+
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 204, 112, 0.25);
+    border-radius: 18px;
+    padding: 20px;
+
+    transition: all 0.3s ease;
+}
+
+.menu-link:hover {
+    background: rgba(255, 204, 112, 0.12);
+    border-color: #ffcc70;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(255, 204, 112, 0.25);
 }
 
 .logo {
