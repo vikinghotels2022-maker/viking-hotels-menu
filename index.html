@@ -136,7 +136,7 @@
     <span data-lang="tr">Toplam Ziyaretçi:</span>
     <span data-lang="en">Total Visitors:</span>
     <span data-lang="ru">Всего посетителей:</span>
-        <span id="stats"></span>
+        <span id="visitor-count"></span>
     </p>
                 </br>
                     <p class="footer-text">
@@ -168,6 +168,17 @@
    document.querySelectorAll('.year').forEach(el => {
     el.textContent = new Date().getFullYear();
 });
+ <script>
+window.addEventListener("load", function () {
+    if (window.goatcounter && goatcounter.visit_count) {
+        goatcounter.visit_count({
+            path: "TOTAL",
+            append: "#visitor-count",
+            no_branding: true
+        });
+    }
+});
+</script>
 </script>
 
 var t = setInterval(function () {
