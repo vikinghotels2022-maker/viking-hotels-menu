@@ -89,14 +89,19 @@ h1 {
     white-space: nowrap;
 }
 */
-
+.nargile-name {
+    color: #ffcc70;
+    font-size: 28px;
+    font-weight: 600;
+}
+/*
 .nargile-name {
     color: #ffcc70;
     font-size: 28px;
     font-weight: 600;
     text-shadow: 0 0 8px rgba(255, 204, 112, 0.25);
 }
-
+*/
 .price {
     color: #ffcc70;
     font-weight: 600;
