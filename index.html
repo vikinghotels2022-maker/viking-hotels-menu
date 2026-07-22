@@ -131,11 +131,12 @@
 
                     </div>
                 </br>
-    <p class="data-goatcounter">
+    <p class="visitor-counter">
     👥
     <span data-lang="tr">Toplam Ziyaretçi:</span>
     <span data-lang="en">Total Visitors:</span>
     <span data-lang="ru">Всего посетителей:</span>
+        <span id="stats"></span>
     </p>
                 </br>
                     <p class="footer-text">
@@ -168,8 +169,23 @@
     el.textContent = new Date().getFullYear();
 });
 </script>
-    <script data-goatcounter="https://vikinghotels.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
 
+var t = setInterval(function () {
+    if (!window.goatcounter || !window.goatcounter.visit_count)
+        return;
+
+    clearInterval(t);
+
+    window.goatcounter.visit_count({
+        append: "#stats",
+        path: "TOTAL",
+        no_branding: true,
+        type: "html"
+    });
+}, 100);
+</script>
+
+<script data-goatcounter="https://vikinghotels.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
