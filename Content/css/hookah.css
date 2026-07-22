@@ -89,10 +89,20 @@ h1 {
     white-space: nowrap;
 }
 */
+/*
 .nargile-name {
     color: #ffcc70;
     font-size: 28px;
     font-weight: 600;
+}
+*/
+.nargile-name {
+    display: block;
+    white-space: nowrap;
+    color: #ffcc70;
+    font-size: 18px;
+    font-weight: 600;
+    text-shadow: 0 0 8px rgba(255,204,112,.25);
 }
 /*
 .nargile-name {
