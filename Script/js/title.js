@@ -1,4 +1,4 @@
-﻿    const lang = navigator.language.substring(0,2);
+﻿   /* const lang = navigator.language.substring(0,2);*/
 
 /* === içerik çeviri sistemi === */
 document.querySelectorAll("[data-lang]").forEach(el => {
@@ -28,5 +28,5 @@ document.querySelectorAll("[data-lang]").forEach(el => {
     document.getElementById("page-title").textContent =
     titleMap[lang] || titleMap["en"];
 
-    document.getElementById("favicon").href =
-    iconMap[lang] || iconMap["en"];
+   /* document.getElementById("favicon").href =
+    iconMap[lang] || iconMap["en"];*/
