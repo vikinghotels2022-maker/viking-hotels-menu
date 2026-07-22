@@ -171,18 +171,7 @@ document.querySelectorAll('.year').forEach(el => {
     el.textContent = new Date().getFullYear();
 });
 </script>
-    <script>
-window.addEventListener("load", function () {
-
-    goatcounter.visit_count({
-        append: "#visitor-count",
-        type: "svg",
-        path: "TOTAL",
-        no_branding: true
-    });
-
-});
-    </script>
+   
     <script>
 fetch("https://vikinghotels.goatcounter.com/counter/TOTAL.json")
     .then(response => response.json())
