@@ -165,5 +165,12 @@
 </script>
 <script data-goatcounter="https://vikinghotels.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
+    <script>
+fetch("https://api.countapi.xyz/hit/vikinghotels/menu")
+  .then(res => res.json())
+  .then(data => {
+      document.getElementById("visitor-count").textContent = data.value;
+  });
+</script>
 </body>
 </html>
