@@ -143,6 +143,24 @@
         alt="Visitor Counter"
         style="max-width:180px;">
 </p>
+                    <p class="visitor-counter">
+    <span data-lang="tr">👥 Toplam Ziyaretçi: <span id="visitor-count">0</span></span>
+
+    <span data-lang="en">👥 Total Visitors: <span id="visitor-count-en">0</span></span>
+
+    <span data-lang="ru">👥 Всего посетителей: <span id="visitor-count-ru">0</span></span>
+</p>
+
+<script>
+fetch("https://vikinghotels.goatcounter.com/counter/TOTAL.json")
+    .then(response => response.json())
+    .then(data => {
+        document.getElementById("visitor-count").textContent = data.count;
+        document.getElementById("visitor-count-en").textContent = data.count;
+        document.getElementById("visitor-count-ru").textContent = data.count;
+    })
+    .catch(error => console.error("Visitor Counter Error:", error));
+</script>
                 </br>
                     <p class="footer-text">
                         <span data-lang="tr">Restaurant ve Bar & QR Menü Deneyimi</span>
