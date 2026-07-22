@@ -165,37 +165,11 @@
     <script src="Script/js/lang.js"></script>
 
 <script>
-   document.querySelectorAll('.year').forEach(el => {
+document.querySelectorAll('.year').forEach(el => {
     el.textContent = new Date().getFullYear();
 });
- <script>
-window.addEventListener("load", function () {
-    if (window.goatcounter && goatcounter.visit_count) {
-        goatcounter.visit_count({
-            path: "TOTAL",
-            append: "#visitor-count",
-            no_branding: true
-        });
-    }
-});
 </script>
-</script>
-
-var t = setInterval(function () {
-    if (!window.goatcounter || !window.goatcounter.visit_count)
-        return;
-
-    clearInterval(t);
-
-    window.goatcounter.visit_count({
-        append: "#stats",
-        path: "TOTAL",
-        no_branding: true,
-        type: "html"
-    });
-}, 100);
-</script>
-
+    
 <script data-goatcounter="https://vikinghotels.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
 </body>
