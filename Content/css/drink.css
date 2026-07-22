@@ -82,10 +82,22 @@ h1 {
         border-color: #ffcc70;
         box-shadow: 0 0 20px rgba(255,204,112,0.18);
     }
-
+/*
 .drink-name {
     font-size: 17px;
     font-weight: 500;
+}
+*/
+.drink-name {
+    display: inline-block;
+    white-space: nowrap;
+
+    font-size: 19px;
+    font-weight: 700;
+
+    background: linear-gradient(180deg, #fff3c2 0%, #ffd86b 45%, #d4af37 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .price {
