@@ -131,21 +131,12 @@
 
                     </div>
                 </br>
-   <p class="visitor-counter">
-    <span data-lang="tr">
-        👥 Toplam Ziyaretçi:
-        <img src="https://hits.sh/vikinghotels2022-maker.github.io/viking-hotels-menu.svg?label=&style=flat&color=ffcc70" alt="Ziyaretçi Sayısı">
-    </span>
+<p class="visitor-counter">
+    <span data-lang="tr">👥 Toplam Ziyaretçi</span>
+    <span data-lang="en">👥 Total Visitors</span>
+    <span data-lang="ru">👥 Всего посетителей</span>
 
-    <span data-lang="en">
-        👥 Total Visitors:
-        <img src="https://hits.sh/vikinghotels2022-maker.github.io/viking-hotels-menu.svg?label=&style=flat&color=ffcc70" alt="Visitor Count">
-    </span>
-
-    <span data-lang="ru">
-        👥 Всего посетителей:
-        <img src="https://hits.sh/vikinghotels2022-maker.github.io/viking-hotels-menu.svg?label=&style=flat&color=ffcc70" alt="Счетчик">
-    </span>
+    <div id="visitor-count"></div>
 </p>
                 </br>
                     <p class="footer-text">
@@ -172,6 +163,7 @@
     </div>
     <script src="Script/js/title.js"></script>
     <script src="Script/js/lang.js"></script>
+    <script src="Script/js/count.js"></script>
 
 <script>
 document.querySelectorAll('.year').forEach(el => {
@@ -179,7 +171,20 @@ document.querySelectorAll('.year').forEach(el => {
 });
 </script>
     
-<script data-goatcounter="https://vikinghotels.goatcounter.com/count"
+
+window.addEventListener("load", function () {
+
+    goatcounter.visit_count({
+        append: "#visitor-count",
+        type: "svg",
+        path: "TOTAL",
+        no_branding: true
+    });
+
+});
+</script>
+    <script data-goatcounter="https://vikinghotels.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
+    <script>
 </body>
 </html>
