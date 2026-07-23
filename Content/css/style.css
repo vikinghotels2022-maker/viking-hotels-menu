@@ -72,6 +72,14 @@ body {
     animation: fadeUp 1.2s ease;
 }
 
+.title-box {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.title {
+    margin: 0;
+}
 .title-line {
     width: auto;
     height: 2px;
