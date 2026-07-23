@@ -72,6 +72,13 @@ body {
     animation: fadeUp 1.2s ease;
 }
 
+.title-line {
+    width: auto;
+    height: 2px;
+    margin: 10px auto 0;
+    background: linear-gradient(to right, transparent, #d4af37, transparent);
+}
+
 @keyframes fadeUp {
     from {
         opacity: 0;
