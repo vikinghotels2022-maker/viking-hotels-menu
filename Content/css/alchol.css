@@ -110,12 +110,7 @@ h1 {
     /*margin: 8px auto 0;
     border-radius: 2px;
 }*/
-.title-line {
-    width: auto;
-    height: 2px;
-    margin: 10px auto 0;
-    background: linear-gradient(to right, transparent, #d4af37, transparent);
-}
+
 /*.back-btn {
     display: inline-flex;
     align-items: center;
