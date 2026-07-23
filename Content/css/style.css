@@ -101,7 +101,7 @@ body {
 }
 
 .menu-link {
-    display: block;
+    /*display: block;*/
     text-decoration: none;
     color: white;
 }
