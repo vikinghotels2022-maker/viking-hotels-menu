@@ -101,9 +101,16 @@ body {
 }
 
 .menu-link {
+    display: block;
     text-decoration: none;
     color: white;
 }
+
+.menu-link:hover {
+    background: rgba(255, 204, 112, 0.12);
+    border-color: #ffcc70;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(255, 204, 112, 0.25);
 
 .logo {
     width: 250px;
