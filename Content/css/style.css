@@ -85,6 +85,7 @@ body {
     color: #111;
     transform: translateX(-50%) translateY(-2px);
 }
+
 @keyframes bgMove {
     from {
         transform: scale(1);
