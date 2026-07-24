@@ -33,7 +33,24 @@ body {
         animation: bgMove 8s ease-in-out infinite alternate;
         z-index: -1;
     }
+.back-btn {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    margin-top: 25px;
+    text-decoration: none;
+    color: white;
+    background: rgba(255,255,255,0.08);
+    padding: 12px 22px;
+    border-radius: 14px;
+    transition: 0.3s;
+}
 
+    .back-btn:hover {
+        background: #ffcc70;
+        color: black;
+    }
 @keyframes bgMove {
     from {
         transform: scale(1);
