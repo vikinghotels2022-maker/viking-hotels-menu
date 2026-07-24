@@ -33,6 +33,7 @@ body {
         animation: bgMove 8s ease-in-out infinite alternate;
         z-index: -1;
     }
+/*
 .back-btn {
     position: relative;
     left: 50%;
@@ -51,6 +52,39 @@ body {
         background: #ffcc70;
         color: black;
     }
+*/
+.back-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 12px 24px;
+
+    background: rgba(0, 0, 0, 0.65);
+    color: #fff;
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+
+    backdrop-filter: blur(8px);
+    transition: .3s ease;
+    z-index: 9999;
+}
+
+.back-btn:hover {
+    background: #c9a66b;
+    color: #111;
+    transform: translateX(-50%) translateY(-2px);
+}
 @keyframes bgMove {
     from {
         transform: scale(1);
