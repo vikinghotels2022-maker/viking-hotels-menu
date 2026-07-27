@@ -363,6 +363,23 @@ body {
     letter-spacing: 1px;
 }
 
+.designer-text {
+    font-size: 13px;          /* Okunabilir ama arka planda kalan ideal boyut */
+    color: #888888;          /* Hafif gri ton, ana metni gölgelemez */
+    font-weight: 400;         /* Normal yazı kalınlığı */
+    margin-top: 5px;         /* Üstteki QR menü yazısıyla mesafe */
+    margin-bottom: 5px;      /* Alttaki copyright yazısıyla mesafe */
+    text-align: center;      /* Yazıyı ortalar */
+    font-family: sans-serif; /* Temiz ve modern yazı tipi */
+}
+
+/* İsterseniz isminizin üzerine gelince hafifçe parlamasını sağlayabilirsiniz */
+.designer-text span:hover {
+    color: #555555;          /* Fareyle üzerine gelindiğinde koyulaşır */
+    transition: color 0.3s ease; /* Yumuşak geçiş efekti */
+}
+
+
 /* MOBİL */
 
 @media(max-width:768px) {
