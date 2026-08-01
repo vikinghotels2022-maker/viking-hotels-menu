@@ -147,12 +147,7 @@ body {
     grid-template-columns: repeat(2,1fr);
     gap: 25px;
 }
-/*
-.menu-link {
-    text-decoration: none;
-    color: white;
-}
-*/
+
 .menu-link {
     display: block;
     text-decoration: none;
