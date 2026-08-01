@@ -93,7 +93,7 @@ h1 {
     font-weight: 600;
     font-size: 17px;
 }
-
+/*
 .back-btn {
     display: inline-block;
     margin-top: 25px;
@@ -109,7 +109,7 @@ h1 {
         background: #ffcc70;
         color: black;
     }
-
+*/
 .left {
     display: flex;
     flex-direction: column;
