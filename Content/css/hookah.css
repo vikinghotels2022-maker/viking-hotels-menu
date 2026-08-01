@@ -4,26 +4,6 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Poppins',sans-serif;
-    min-height: 100vh;
-    color: white;
-    background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.78)), url('https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&w=1920&auto=format&fit=crop');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-    /* Atmosfer efekti */
-    body::before {
-        content: "";
-        position: fixed;
-        inset: 0;
-        background: radial-gradient(circle at top left, rgba(255,140,0,0.18), transparent 30%), radial-gradient(circle at bottom right, rgba(255,215,0,0.10), transparent 30%);
-        animation: bgMove 8s ease-in-out infinite alternate;
-        z-index: -1;
-    }
-
 @keyframes bgMove {
     from {
         transform: scale(1);
