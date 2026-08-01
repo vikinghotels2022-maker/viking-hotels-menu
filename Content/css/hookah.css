@@ -75,23 +75,7 @@ h1 {
     font-weight: 600;
     font-size: 17px;
 }
-/*
-.back-btn {
-    display: inline-block;
-    margin-top: 25px;
-    text-decoration: none;
-    color: white;
-    background: rgba(255,255,255,0.08);
-    padding: 12px 22px;
-    border-radius: 14px;
-    transition: 0.3s;
-}
 
-    .back-btn:hover {
-        background: #ffcc70;
-        color: black;
-    }
-*/
 .desc {
     font-size: 13px;
     color: #bdbdbd;
@@ -103,14 +87,7 @@ h1 {
         display: block; /* 👈 her dili alt satıra indirir */
     }
 
-/*.item-desc {
-    display: block;
-    margin-top: 4px;
-    font-size: 13px;
-    color: #bdbdbd;
-    line-height: 1.4;
-    white-space: pre-line;*/ /* satırları kırar */
-/*}*/
+
 .item-desc {
     margin-top: 4px;
     font-size: 13px;
@@ -123,20 +100,6 @@ h1 {
     flex-direction: column; /* 👈 asıl çözüm */
     align-items: flex-start;
 }
-
-/*.item-desc{
-    width:70%;
-    display:block;
-    margin-top:3px;
-    color:#bdbdbd;
-    font-size:13px;
-}
-.item-desc span:first-child{
-    color:#ffffff;
-    opacity:0.95;
-}
-
-*/
 
 /* Mobil */
 
