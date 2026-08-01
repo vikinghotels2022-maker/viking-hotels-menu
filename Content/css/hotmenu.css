@@ -93,7 +93,7 @@ h1 {
     font-weight: 600;
     font-size: 17px;
 }
-
+/*
 .back-btn {
     display: inline-block;
     margin-top: 25px;
@@ -104,7 +104,7 @@ h1 {
     border-radius: 14px;
     transition: 0.3s;
 }
-
+*/
 .left {
     display: flex;
     flex-direction: column;
@@ -128,12 +128,12 @@ h1 {
     .item-desc span {
         display: block; /* 👈 her satırı alta indirir */
     }
-
+/*
 .back-btn:hover {
     background: #ffcc70;
     color: black;
 }
-
+*/
 .item-desc span:first-child {
     color: #ffffff;
     opacity: 0.95;
