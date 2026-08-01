@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/*
 body {
     font-family: 'Poppins',sans-serif;
     min-height: 100vh;
@@ -13,8 +13,9 @@ body {
     background-position: center;
     background-attachment: fixed;
 }
-
+/*
     /* Atmosfer efekti */
+/*
     body::before {
         content: "";
         position: fixed;
@@ -23,7 +24,7 @@ body {
         animation: bgMove 8s ease-in-out infinite alternate;
         z-index: -1;
     }
-
+*/
 @keyframes bgMove {
     from {
         transform: scale(1);
