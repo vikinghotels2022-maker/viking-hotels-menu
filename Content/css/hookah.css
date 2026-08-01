@@ -3,27 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-/*
-body {
-    font-family: 'Poppins',sans-serif;
-    min-height: 100vh;
-    color: white;
-    background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.78)), url('https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&w=1920&auto=format&fit=crop');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
 
-    /* Atmosfer efekti 
-    body::before {
-        content: "";
-        position: fixed;
-        inset: 0;
-        background: radial-gradient(circle at top left, rgba(255,140,0,0.18), transparent 30%), radial-gradient(circle at bottom right, rgba(255,215,0,0.10), transparent 30%);
-        animation: bgMove 8s ease-in-out infinite alternate;
-        z-index: -1;
-    }
-*/
 @keyframes bgMove {
     from {
         transform: scale(1);
@@ -95,23 +75,7 @@ h1 {
     font-weight: 600;
     font-size: 17px;
 }
-/*
-.back-btn {
-    display: inline-block;
-    margin-top: 25px;
-    text-decoration: none;
-    color: white;
-    background: rgba(255,255,255,0.08);
-    padding: 12px 22px;
-    border-radius: 14px;
-    transition: 0.3s;
-}
 
-    .back-btn:hover {
-        background: #ffcc70;
-        color: black;
-    }
-*/
 .desc {
     font-size: 13px;
     color: #bdbdbd;
@@ -123,21 +87,22 @@ h1 {
         display: block; /* 👈 her dili alt satıra indirir */
     }
 
-/*.item-desc {
+.item-desc {
     display: block;
     margin-top: 4px;
     font-size: 13px;
     color: #bdbdbd;
     line-height: 1.4;
     white-space: pre-line;*/ /* satırları kırar */
-/*}*/
+}
+/*
 .item-desc {
     margin-top: 4px;
     font-size: 13px;
     color: #bdbdbd;
     line-height: 1.5;
 }
-
+*/
 .left {
     display: flex;
     flex-direction: column; /* 👈 asıl çözüm */
