@@ -6,7 +6,7 @@
     // CLOUDFLARE WORKER ADRESİNİ BURAYA YAZ
     // ==========================================
 
-    const ONLINE_SERVER = "wss://BURAYA-WORKER-ADRESIN-YAZ";
+    const ONLINE_SERVER = "https://vikinghotels2022-maker.github.io/viking-hotels-menu/index.html";
 
     const countElement = document.getElementById("online-count");
 
