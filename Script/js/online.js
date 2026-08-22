@@ -6,7 +6,7 @@
     // CLOUDFLARE WORKER ADRESİNİ BURAYA YAZ
     // ==========================================
 
-    const ONLINE_SERVER = "https://vikinghotels2022-maker.github.io/viking-hotels-menu/index.html";
+    const ONLINE_SERVER = "https://viking-online.vikinghotels2022.workers.dev/";
 
     const countElement = document.getElementById("online-count");
 
