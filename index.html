@@ -6,6 +6,8 @@
 
     <title id="page-title">Viking Hotels</title>
     <link rel="icon" href="Content/img/Viking.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link href="Content/css/style.css" rel="stylesheet" />
     <link href="Content/css/normalize.css" rel="stylesheet" />
@@ -160,27 +162,36 @@
         </div>
 
     </div>
-    <script src="Script/js/title.js"></script>
-    <script src="Script/js/lang.js"></script>
-    <script src="Script/js/count.js"></script>
+    <script defer src="Script/js/title.js"></script>
+    <script defer src="Script/js/lang.js"></script>
     <script type="module" src="Script/js/live-visitors.js"></script>
 <script>
-document.querySelectorAll('.year').forEach(el => {
-    el.textContent = new Date().getFullYear();
+window.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".year").forEach(el => {
+        el.textContent = new Date().getFullYear();
+    });
 });
 </script>
    
     <script>
-fetch("https://vikinghotels.goatcounter.com/counter/TOTAL.json")
-    .then(response => response.json())
-    .then(data => {
-        document.getElementById("visitor-count").textContent = data.count;
-        document.getElementById("visitor-count-en").textContent = data.count;
-        document.getElementById("visitor-count-ru").textContent = data.count;
-    })
-    .catch(error => console.error("Visitor Counter Error:", error));
+window.addEventListener("load", () => {
+    fetch("https://vikinghotels.goatcounter.com/counter/TOTAL.json")
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById("visitor-count").textContent = data.count;
+            document.getElementById("visitor-count-en").textContent = data.count;
+            document.getElementById("visitor-count-ru").textContent = data.count;
+        })
+        .catch(error => console.error("Visitor Counter Error:", error));
+
+    setTimeout(() => {
+        const counterScript = document.createElement("script");
+        counterScript.async = true;
+        counterScript.dataset.goatcounter = "https://vikinghotels.goatcounter.com/count";
+        counterScript.src = "https://gc.zgo.at/count.js";
+        document.body.appendChild(counterScript);
+    }, 1800);
+});
 </script>
-    <script data-goatcounter="https://vikinghotels.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
